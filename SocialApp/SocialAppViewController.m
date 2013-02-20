@@ -2,6 +2,9 @@
 //  SocialAppViewController.m
 //  SocialApp
 //
+//  Tutorial: http://www.techotopia.com/index.php/An_iPhone_iOS_6_Facebook_Integration_Tutorial_using_UIActivityViewController
+//  But I didn't use storyboards.
+//
 //  Created by Donn Lee on 2/13/13.
 //  Copyright (c) 2013 ploo. All rights reserved.
 //
@@ -74,6 +77,8 @@
     _postImage.image = nil;
 }
 
+#pragma mark -
+#pragma mark Common super methods
 
 // Common super methods below:
 
