@@ -18,6 +18,8 @@
 		70E4A23316CC5EF40069AC56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70E4A23216CC5EF40069AC56 /* Default-568h@2x.png */; };
 		70E4A23616CC5EF40069AC56 /* SocialAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70E4A23516CC5EF40069AC56 /* SocialAppViewController.m */; };
 		70E4A23916CC5EF40069AC56 /* SocialAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E4A23716CC5EF40069AC56 /* SocialAppViewController.xib */; };
+		70E4A24016CC78180069AC56 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E4A23F16CC78180069AC56 /* Social.framework */; };
+		70E4A24216CC78250069AC56 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E4A24116CC78250069AC56 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		70E4A23416CC5EF40069AC56 /* SocialAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocialAppViewController.h; sourceTree = "<group>"; };
 		70E4A23516CC5EF40069AC56 /* SocialAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialAppViewController.m; sourceTree = "<group>"; };
 		70E4A23816CC5EF40069AC56 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SocialAppViewController.xib; sourceTree = "<group>"; };
+		70E4A23F16CC78180069AC56 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		70E4A24116CC78250069AC56 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E4A24216CC78250069AC56 /* MobileCoreServices.framework in Frameworks */,
+				70E4A24016CC78180069AC56 /* Social.framework in Frameworks */,
 				70E4A21D16CC5EF30069AC56 /* UIKit.framework in Frameworks */,
 				70E4A21F16CC5EF30069AC56 /* Foundation.framework in Frameworks */,
 				70E4A22116CC5EF30069AC56 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +62,8 @@
 		70E4A20D16CC5EF30069AC56 = {
 			isa = PBXGroup;
 			children = (
+				70E4A24116CC78250069AC56 /* MobileCoreServices.framework */,
+				70E4A23F16CC78180069AC56 /* Social.framework */,
 				70E4A22216CC5EF30069AC56 /* SocialApp */,
 				70E4A21B16CC5EF30069AC56 /* Frameworks */,
 				70E4A21916CC5EF30069AC56 /* Products */,
@@ -226,6 +234,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -247,6 +256,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -293,6 +303,7 @@
 				70E4A23E16CC5EF40069AC56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
